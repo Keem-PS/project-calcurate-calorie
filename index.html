@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรแกรมคำนวณแคลอรี่ต่อวัน</title>
+</head>
+<body>
+    <h1>โปรแกรมคำนวณแคลอรี่ สำหรับคนอยากผอม</h1>
+    <p>(Basal Metabolic Rate) อัตราการเผาผลาญพื้นฐานเป็นเครื่องมือในการคำนวณจำนวนแคลอรี่ที่ควรจะได้รับในแต่ละวัน</p>
+    <hr>
+    <h3>คำนวณหาค่า BMR</h3>
+    <p>หาค่า BMR มาจากสูตร Harris Benedict Formula ซึ่งมีปัจจัยต่างๆ ไม่ว่าจะเป็นส่วนสูง น้ำหนัก เพศ และอายุ รวมทั้งกิจกรรมต่างๆ ในการดำเนินชีวิตประจำวัน</p>
+    <div class="form-group">
+        <input type="radio" name="gender" value="male">ชาย
+        <input type="radio" name="gender" value="female">หญิง
+        <div class="main-color-form">น้ำหนัก (kg.)</div>
+        <input type="number" id="kg">
+        <div class="main-color-form">ส่วนสูง (cm.)</div>
+        <input type="number" id="height">
+        <div class="main-color-form">อายุ (ปี)</div>
+        <input type="number" id="age">
+        <div class="btn-result">
+            <button id="cal-bmr" type="submit" onclick="displayBMR(calBMR())">คำนวณ BMR</button>
+        </div>
+        <div class="box-result">ค่า BMR (kcal)
+            <div id="result-bmr">0</div>
+        </div>
+    </div>
+    <hr>
+
+    <h3>คำนวณหาค่า TDEE</h3>
+    <p>(Total Daily Energy Expenditure) การใช้พลังงานทั้งหมดต่อวัน ค่า TDEE หาได้โดยการนำค่า BMR ไปคำนวณกับกิจกรรมที่ทำในแต่ละวัน</p>
+    <div class="form-group">
+        <div class="main-color-form">เลือกกิจกรรมที่ทำทุกวัน</div>
+        <div class="event-tdee">
+            <input type="radio" name="event-tdee" value="1.2">นั่งทำงานอยู่กับที่ และไม่ได้ออกกำลังกาย
+        </div>
+        <div class="event-tdee">
+            <input type="radio" name="event-tdee" value="1.375">ออกกำลังกายเล็กน้อย ประมาณอาทิตย์ละ 1-3 วัน
+        </div>
+        <div class="event-tdee">
+            <input type="radio" name="event-tdee" value="1.55">ออกกำลังกายปานกลาง ประมาณอาทิตย์ละ 3-5 วัน
+        </div>
+        <div class="event-tdee">
+            <input type="radio" name="event-tdee" value="1.725">ออกกำลังกายอย่างหนัก ประมาณอาทิตย์ละ 6-7 วัน
+        </div>
+        <div class="event-tdee">
+            <input type="radio" name="event-tdee" value="1.9">ออกกำลังกายทุกวันอย่างหนัก เช้า-เย็น
+        </div>
+        <div class="btn-result">
+            <button id="cal-tdee" type="submit" onclick="displayTDEE(calTDEE())">คำนวณ BMR</button>
+        </div>
+        <div class="box-result">ค่า TDEE
+            <div id="result-tdee">0</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
