@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mitr", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+}
+
+.title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left:200px;
+    color: #770A32;
+    /* border: 1px solid #770A32; */
+}
+
+.title p {
+    margin-top: 10px
+}
+
+.title hr {
+    margin-top: 10px;
+}
+
+.main-title {
+    margin-left:200px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    /* border: 1px solid #770A32; */
+}
+
+.remark {
+    color: red;
+    margin-left: 200px;
+}
+
+.main-title h3 {
+    color: #770A32;
+}
+
+.main-title p {
+    margin-top:10px ;
+    color: #350416;
+}
+
+.main-color-form {
+    color: #770A32;
+}
+
+.form-group {
+    margin: 20px 200px 20px 200px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #EDECED;
+}
+
+.formula {
+    margin: 20px 200px 20px 200px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #EDECED;
+}
+
+.radio-gender {
+    appearance: none;
+    border: 2px solid #770A32;
+    padding: 10px 95px;
+    margin: 10px 8px 10px 8px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio-gender::before {
+    box-sizing: border-box;
+    transition: border .2s linear;
+}
+
+.radio-gender::after {
+    content: attr(Label);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+#checkmale:checked {
+    background-color: #3690dd;
+    color: #ffff;
+    border: 2px solid #3690dd;
+}
+
+#checkfemale:checked {
+    background-color: #f470ad;;
+    color: #ffff;
+    border: 2px solid #f470ad;
+}
+
+#checkmale:hover {
+    background-color: #3690dd;
+    color: #ffff;
+    border: 2px solid #3690dd;
+}
+
+#checkfemale:hover {
+    background-color: #f470ad;;
+    color: #ffff;
+    border: 2px solid #f470ad;
+}
+
+.radio-tdee {
+    appearance: none;
+    border: 2px solid #770A32;
+    width: 100%;
+    padding: 5px 60px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 6px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio-tdee::before {
+    box-sizing: border-box;
+    transition: border .2s linear;
+}
+
+.radio-tdee::after {
+    content: attr(Label);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.radio-tdee:checked {
+    background-color: #770A32;
+    color: #ffff;
+}
+
+.radio-tdee:hover {
+    background-color: #770A32;
+    color: #ffff;
+}
+
+.sub-form {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.input-bmr {
+    width: 100%;
+    border-radius: 6px;
+    padding: 5px 20px;
+    margin: 10px 0px 10px 0px;
+}
+
+.radio-gender-main {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-submit {
+    border: 3px solid #770A32;
+    color: #770A32;
+    width: 100%;
+    padding: 5px 60px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.btn-submit:hover {
+    background-color: #770A32;
+    color: #ffff;
+}
+
+.box-result {
+    border: 3px solid #770A32;
+    border-radius: 6px;
+    background-color: #770A32;
+    color: #ffff;
+    text-align: center;
+}
+
+.text-result {
+    border: 3px solid #770A32;
+    background-color: #EDECED;
+    color: black;
+    margin: 10px 30px 10px 30px;
+    padding: 30px;
+    border-radius: 6px;
+    
+}
+
+
+
+
+
+

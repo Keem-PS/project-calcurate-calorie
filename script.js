@@ -27,7 +27,20 @@ function displayTDEE(tdee) {
     document.getElementById('result-tdee').innerHTML = tdee
 }
 
+function clearForm() {
+    // Get all input elements within the form
+    const inputs = document.querySelectorAll("input");
 
+    // Loop through each input and clear its value
+    inputs.forEach(input => {
+        if (input.type === 'radio') {
+            input.checked = false; // Uncheck all radio buttons
+        }
+    });
+}
+
+// Ensure the function runs after the page has fully loaded
+window.onload = clearForm;
 
 
 
