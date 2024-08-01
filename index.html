@@ -9,11 +9,15 @@
     <title>โปรแกรมคำนวณแคลอรี่ต่อวัน</title>
 </head>
 <body>
+    <!-- แสดงหัวเรื่องโปรแกรม -->
     <header class="title">
         <h3>โปรแกรมคำนวณแคลอรี่ สำหรับคนอยากผอม</h3>
         <p>เป็นเครื่องมือในการคำนวณจำนวนแคลอรี่ที่ควรจะได้รับในแต่ละวัน</p>
         <hr>
     </header>
+
+
+    <!-- หน้าแสดงผลหาค่า BMR -->
     <div class="main-title">
         <h3>คำนวณหาค่า BMR</h3>
         <p>หาค่า BMR โดยนำค่าน้ำหนัก ส่วนสูง และอายุมาคำนวณหาค่า BMR ซึ่งเป็นการคำนวณหาแคลอรี่ที่ใช้ในชีวิตประจำวันของแต่ละบุคคล</p>
@@ -32,21 +36,25 @@
             <input type="number" id="height" class="input-bmr">
             <div class="main-color-form">อายุ (ปี)</div>
             <input type="number" id="age" class="input-bmr">
+            <!-- ปุ่มสำหรับคำนวณหาค่า BMR -->
             <div class="btn-result">
                 <button class="btn-submit" id="cal-bmr" type="submit" onclick="displayBMR(calBMR())">คำนวณ BMR</button>
             </div>
+            <!-- แสดงผลลัพธ์หลังการคำนวณเสร็จ -->
             <div class="box-result">ค่า BMR (kcal)
                 <div class="text-result" id="result-bmr">0</div>
             </div>
         </div>
     </div>
 
+    <!-- สูตรการคำนวณ BMR -->
     <div class="formula">
         <h5>สูตรการคำนวณหาค่า BMR</h5>
         <h5>สำหรับผู้ชาย : BMR = 66 + (13.7 x น้ำหนักตัวเป็น กก.) + (5 x ส่วนสูงเป็น ซม.) – (6.8 x อายุ)</h5>
         <h5>สำหรับผู้หญิง : BMR = 665 + (9.6 x น้ำหนักตัวเป็น กก.) + (1.8 x ส่วนสูงเป็น ซม.) – (4.7 x อายุ)</h5>
     </div>
 
+    <!-- หน้าแสดงผลหาค่า TDEE -->
     <div class="main-title">
         <h3>คำนวณหาค่า TDEE</h3>
         <p>ค่า TDEE หาได้โดยการนำค่า BMR ไปคำนวณกับกิจกรรมที่ทำในแต่ละวัน</p>
@@ -70,9 +78,11 @@
             <div class="event-tdee">
                 <input type="radio" name="event-tdee" value="1.9" checked class="radio-tdee" label="ออกกำลังกายทุกวันอย่างหนัก เช้า-เย็น">
             </div>
+            <!-- ปุ่มสำหรับคำนวณหาค่า TDEE -->
             <div class="btn-result">
                 <button class="btn-submit" id="cal-tdee" type="submit" onclick="displayTDEE(calTDEE())">คำนวณ BMR</button>
             </div>
+            <!-- แสดงผลลัพธ์หลังการคำนวณเสร็จ -->
             <div class="box-result">ค่า TDEE
                 <div class="text-result" id="result-tdee">0</div>
            </div>
